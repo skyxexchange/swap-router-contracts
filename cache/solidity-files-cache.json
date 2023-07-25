@@ -1,0 +1,3479 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/SwapRouter02.sol": {
+      "lastModificationDate": 1690277938773,
+      "contentHash": "4346f3f67f75347ba9ca222d5d10bbe4",
+      "sourceName": "contracts/SwapRouter02.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-periphery/contracts/base/SelfPermit.sol",
+        "@skyxexchange/v3-periphery/contracts/base/PeripheryImmutableState.sol",
+        "./interfaces/ISwapRouter02.sol",
+        "./V2SwapRouter.sol",
+        "./V3SwapRouter.sol",
+        "./base/ApproveAndCall.sol",
+        "./base/MulticallExtended.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "SwapRouter02"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/interfaces/ISwapRouter02.sol": {
+      "lastModificationDate": 1690277917628,
+      "contentHash": "6ad63380f33346c827f7c0dade0f0a5b",
+      "sourceName": "contracts/interfaces/ISwapRouter02.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-periphery/contracts/interfaces/ISelfPermit.sol",
+        "./IV2SwapRouter.sol",
+        "./IV3SwapRouter.sol",
+        "./IApproveAndCall.sol",
+        "./IMulticallExtended.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "ISwapRouter02"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/V3SwapRouter.sol": {
+      "lastModificationDate": 1690277949311,
+      "contentHash": "0bcf2cedaca0da42d9a7dbf0b4eedaef",
+      "sourceName": "contracts/V3SwapRouter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-core/contracts/libraries/SafeCast.sol",
+        "@skyxexchange/v3-core/contracts/libraries/TickMath.sol",
+        "@skyxexchange/v3-core/contracts/interfaces/ISkyXV3Pool.sol",
+        "@skyxexchange/v3-periphery/contracts/libraries/Path.sol",
+        "@skyxexchange/v3-periphery/contracts/libraries/PoolAddress.sol",
+        "@skyxexchange/v3-periphery/contracts/libraries/CallbackValidation.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "./interfaces/IV3SwapRouter.sol",
+        "./base/PeripheryPaymentsWithFeeExtended.sol",
+        "./base/OracleSlippage.sol",
+        "./libraries/Constants.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "V3SwapRouter"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/base/MulticallExtended.sol": {
+      "lastModificationDate": 1690277917629,
+      "contentHash": "e849d4469f550843e5f45c4c96e893ff",
+      "sourceName": "contracts/base/MulticallExtended.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-periphery/contracts/base/Multicall.sol",
+        "../interfaces/IMulticallExtended.sol",
+        "../base/PeripheryValidationExtended.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "MulticallExtended"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/V2SwapRouter.sol": {
+      "lastModificationDate": 1690277938756,
+      "contentHash": "8b1c022573312f337bec698dd636ca53",
+      "sourceName": "contracts/V2SwapRouter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-core/contracts/libraries/LowGasSafeMath.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "./interfaces/IV2SwapRouter.sol",
+        "./base/ImmutableState.sol",
+        "./base/PeripheryPaymentsWithFeeExtended.sol",
+        "./libraries/Constants.sol",
+        "./libraries/SkyXV2Library.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "V2SwapRouter"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/base/ApproveAndCall.sol": {
+      "lastModificationDate": 1690277938774,
+      "contentHash": "0e25bddf9ed545e0c3ffbe3c690f82a4",
+      "sourceName": "contracts/base/ApproveAndCall.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@skyxexchange/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol",
+        "../interfaces/IApproveAndCall.sol",
+        "./ImmutableState.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "ApproveAndCall"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/base/SelfPermit.sol": {
+      "lastModificationDate": 1690278180315,
+      "contentHash": "f5a28c4a86996c97e107f97a57419728",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/base/SelfPermit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/drafts/IERC20Permit.sol",
+        "../interfaces/ISelfPermit.sol",
+        "../interfaces/external/IERC20PermitAllowed.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "SelfPermit"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/base/PeripheryImmutableState.sol": {
+      "lastModificationDate": 1690278180315,
+      "contentHash": "fbf76a4f3578f3408b37b16f264431c6",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/base/PeripheryImmutableState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-core/contracts/interfaces/ISkyXV3Factory.sol",
+        "../interfaces/IPeripheryImmutableState.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "PeripheryImmutableState"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/interfaces/IV2SwapRouter.sol": {
+      "lastModificationDate": 1690277938775,
+      "contentHash": "aaacbfd90085936f580c230a0d0b8b5d",
+      "sourceName": "contracts/interfaces/IV2SwapRouter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IV2SwapRouter"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/interfaces/IV3SwapRouter.sol": {
+      "lastModificationDate": 1690277938775,
+      "contentHash": "1659879e346324d891d2800a7986b7a1",
+      "sourceName": "contracts/interfaces/IV3SwapRouter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-core/contracts/interfaces/callback/ISkyXV3SwapCallback.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IV3SwapRouter"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/interfaces/IApproveAndCall.sol": {
+      "lastModificationDate": 1689412679941,
+      "contentHash": "41454ac7eae2c8b77ce5af1373711483",
+      "sourceName": "contracts/interfaces/IApproveAndCall.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "IApproveAndCall"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/interfaces/IMulticallExtended.sol": {
+      "lastModificationDate": 1690277917628,
+      "contentHash": "b7e505d8acb6e166c248a243274df7a3",
+      "sourceName": "contracts/interfaces/IMulticallExtended.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-periphery/contracts/interfaces/IMulticall.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IMulticallExtended"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/interfaces/ISelfPermit.sol": {
+      "lastModificationDate": 1690278180313,
+      "contentHash": "bb6ee7140c27d283bf7c5f5780c8fcd9",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/interfaces/ISelfPermit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "ISelfPermit"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-core/contracts/interfaces/callback/ISkyXV3SwapCallback.sol": {
+      "lastModificationDate": 1690278181392,
+      "contentHash": "d71d5a6d4db7577a34c29c7b0c14b05c",
+      "sourceName": "@skyxexchange/v3-core/contracts/interfaces/callback/ISkyXV3SwapCallback.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "ISkyXV3SwapCallback"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/interfaces/IMulticall.sol": {
+      "lastModificationDate": 1690278180311,
+      "contentHash": "a2e56a9714654fdbdf3a7bd35ad4ebd1",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/interfaces/IMulticall.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IMulticall"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/base/PeripheryPaymentsWithFeeExtended.sol": {
+      "lastModificationDate": 1690277917628,
+      "contentHash": "9a27d59c0e9d285ca7a4e44d25695a03",
+      "sourceName": "contracts/base/PeripheryPaymentsWithFeeExtended.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-periphery/contracts/base/PeripheryPaymentsWithFee.sol",
+        "../interfaces/IPeripheryPaymentsWithFeeExtended.sol",
+        "./PeripheryPaymentsExtended.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "PeripheryPaymentsWithFeeExtended"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/base/OracleSlippage.sol": {
+      "lastModificationDate": 1690277938773,
+      "contentHash": "3bf7010bd3a728ee11d69a2cd91d8ede",
+      "sourceName": "contracts/base/OracleSlippage.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IOracleSlippage.sol",
+        "@skyxexchange/v3-core/contracts/interfaces/ISkyXV3Pool.sol",
+        "@skyxexchange/v3-periphery/contracts/base/PeripheryImmutableState.sol",
+        "@skyxexchange/v3-periphery/contracts/base/BlockTimestamp.sol",
+        "@skyxexchange/v3-periphery/contracts/libraries/Path.sol",
+        "@skyxexchange/v3-periphery/contracts/libraries/PoolAddress.sol",
+        "@skyxexchange/v3-periphery/contracts/libraries/OracleLibrary.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "OracleSlippage"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/libraries/Constants.sol": {
+      "lastModificationDate": 1689412679935,
+      "contentHash": "362108a8c2387222f704a8be1c5b31c2",
+      "sourceName": "contracts/libraries/Constants.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "Constants"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-core/contracts/libraries/SafeCast.sol": {
+      "lastModificationDate": 1690278180309,
+      "contentHash": "c89128b97d009587db99cae7763cfef0",
+      "sourceName": "@skyxexchange/v3-core/contracts/libraries/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/libraries/Path.sol": {
+      "lastModificationDate": 1690278180314,
+      "contentHash": "8c77deefa62a7600476db7122c811951",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/libraries/Path.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BytesLib.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "Path"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/libraries/CallbackValidation.sol": {
+      "lastModificationDate": 1690278180313,
+      "contentHash": "80fef46249acf1141bb0955c06c5c96a",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/libraries/CallbackValidation.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-core/contracts/interfaces/ISkyXV3Pool.sol",
+        "./PoolAddress.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "CallbackValidation"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-core/contracts/libraries/TickMath.sol": {
+      "lastModificationDate": 1690278180314,
+      "contentHash": "6bd9ce5056f36b9763627bce69998c83",
+      "sourceName": "@skyxexchange/v3-core/contracts/libraries/TickMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.8.0"
+      ],
+      "artifacts": [
+        "TickMath"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-core/contracts/interfaces/ISkyXV3Pool.sol": {
+      "lastModificationDate": 1690278180311,
+      "contentHash": "06d3d3d1ba9cdda33565513ec0c53cb4",
+      "sourceName": "@skyxexchange/v3-core/contracts/interfaces/ISkyXV3Pool.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./pool/ISkyXV3PoolImmutables.sol",
+        "./pool/ISkyXV3PoolState.sol",
+        "./pool/ISkyXV3PoolDerivedState.sol",
+        "./pool/ISkyXV3PoolActions.sol",
+        "./pool/ISkyXV3PoolOwnerActions.sol",
+        "./pool/ISkyXV3PoolEvents.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "ISkyXV3Pool"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1690278180151,
+      "contentHash": "70ec621ea910798b6c590a0b402a5bb9",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/libraries/PoolAddress.sol": {
+      "lastModificationDate": 1690278180314,
+      "contentHash": "2b3031aa4fb4cfe760579a0659d807ee",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/libraries/PoolAddress.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "PoolAddress"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/interfaces/IPeripheryPaymentsWithFeeExtended.sol": {
+      "lastModificationDate": 1690277917628,
+      "contentHash": "54a730b8bf69304bc15f2e0cca64c401",
+      "sourceName": "contracts/interfaces/IPeripheryPaymentsWithFeeExtended.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-periphery/contracts/interfaces/IPeripheryPaymentsWithFee.sol",
+        "./IPeripheryPaymentsExtended.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IPeripheryPaymentsWithFeeExtended"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/base/PeripheryPaymentsExtended.sol": {
+      "lastModificationDate": 1690277917628,
+      "contentHash": "534a95eba7ca3bed2d105847eb015e8b",
+      "sourceName": "contracts/base/PeripheryPaymentsExtended.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-periphery/contracts/base/PeripheryPayments.sol",
+        "@skyxexchange/v3-periphery/contracts/libraries/TransferHelper.sol",
+        "../interfaces/IPeripheryPaymentsExtended.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "PeripheryPaymentsExtended"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/base/PeripheryPaymentsWithFee.sol": {
+      "lastModificationDate": 1690278180315,
+      "contentHash": "1c5bc966aaf666215ad8756aa70ee5f0",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/base/PeripheryPaymentsWithFee.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@skyxexchange/v3-core/contracts/libraries/LowGasSafeMath.sol",
+        "./PeripheryPayments.sol",
+        "../interfaces/IPeripheryPaymentsWithFee.sol",
+        "../interfaces/external/IWETH9.sol",
+        "../libraries/TransferHelper.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "PeripheryPaymentsWithFee"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/interfaces/IPeripheryPaymentsExtended.sol": {
+      "lastModificationDate": 1690277917628,
+      "contentHash": "aeb5328e2e5488bd974754bae05cb415",
+      "sourceName": "contracts/interfaces/IPeripheryPaymentsExtended.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-periphery/contracts/interfaces/IPeripheryPayments.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IPeripheryPaymentsExtended"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/interfaces/IPeripheryPaymentsWithFee.sol": {
+      "lastModificationDate": 1690278180313,
+      "contentHash": "cf3d11802bba945da909fcfe2faff853",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/interfaces/IPeripheryPaymentsWithFee.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IPeripheryPayments.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IPeripheryPaymentsWithFee"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/interfaces/IPeripheryPayments.sol": {
+      "lastModificationDate": 1690278180312,
+      "contentHash": "8aa07bcaad7779d2bae8089adef235bf",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/interfaces/IPeripheryPayments.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IPeripheryPayments"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/libraries/TransferHelper.sol": {
+      "lastModificationDate": 1690278180315,
+      "contentHash": "356c05e982cd7d517ee9a8af0104c30f",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/base/PeripheryPayments.sol": {
+      "lastModificationDate": 1690278180315,
+      "contentHash": "0b56335ed00b2716be433b2c78d9fc1f",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/base/PeripheryPayments.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "../interfaces/IPeripheryPayments.sol",
+        "../interfaces/external/IWETH9.sol",
+        "../libraries/TransferHelper.sol",
+        "./PeripheryImmutableState.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "PeripheryPayments"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/interfaces/external/IWETH9.sol": {
+      "lastModificationDate": 1690278181392,
+      "contentHash": "b2db1bd28998866868200957d0d964c5",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/interfaces/external/IWETH9.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "IWETH9"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/interfaces/IPeripheryImmutableState.sol": {
+      "lastModificationDate": 1690278180311,
+      "contentHash": "f2d4eafad98d75f68686ea177a0b7b97",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/interfaces/IPeripheryImmutableState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IPeripheryImmutableState"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-core/contracts/interfaces/ISkyXV3Factory.sol": {
+      "lastModificationDate": 1690278180310,
+      "contentHash": "fe43ef92ea86ee183c0b169baa00ed98",
+      "sourceName": "@skyxexchange/v3-core/contracts/interfaces/ISkyXV3Factory.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "ISkyXV3Factory"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-core/contracts/libraries/LowGasSafeMath.sol": {
+      "lastModificationDate": 1690278180309,
+      "contentHash": "da3d2c9dee6eee74f85b44d901fe8d34",
+      "sourceName": "@skyxexchange/v3-core/contracts/libraries/LowGasSafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0"
+      ],
+      "artifacts": [
+        "LowGasSafeMath"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/interfaces/IOracleSlippage.sol": {
+      "lastModificationDate": 1689412679944,
+      "contentHash": "627d85c6c6812063793331621e31eb0a",
+      "sourceName": "contracts/interfaces/IOracleSlippage.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IOracleSlippage"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/base/BlockTimestamp.sol": {
+      "lastModificationDate": 1690278180315,
+      "contentHash": "9558ed78048252f933fde4b5320eb84c",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/base/BlockTimestamp.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "BlockTimestamp"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/libraries/OracleLibrary.sol": {
+      "lastModificationDate": 1690278180315,
+      "contentHash": "05178fa2f5139e5f5480a7c69fd0b1c4",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/libraries/OracleLibrary.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-core/contracts/libraries/FullMath.sol",
+        "@skyxexchange/v3-core/contracts/libraries/TickMath.sol",
+        "@skyxexchange/v3-core/contracts/interfaces/ISkyXV3Pool.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.8.0"
+      ],
+      "artifacts": [
+        "OracleLibrary"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-core/contracts/interfaces/pool/ISkyXV3PoolImmutables.sol": {
+      "lastModificationDate": 1690278181391,
+      "contentHash": "34ddbc127eea388f292cbd1551bd6ebf",
+      "sourceName": "@skyxexchange/v3-core/contracts/interfaces/pool/ISkyXV3PoolImmutables.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "ISkyXV3PoolImmutables"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-core/contracts/interfaces/pool/ISkyXV3PoolActions.sol": {
+      "lastModificationDate": 1690278181391,
+      "contentHash": "44a314f2c73cf7a98d09333169a7866b",
+      "sourceName": "@skyxexchange/v3-core/contracts/interfaces/pool/ISkyXV3PoolActions.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "ISkyXV3PoolActions"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-core/contracts/interfaces/pool/ISkyXV3PoolDerivedState.sol": {
+      "lastModificationDate": 1690278181391,
+      "contentHash": "510dd16433353717207cd920e733d03d",
+      "sourceName": "@skyxexchange/v3-core/contracts/interfaces/pool/ISkyXV3PoolDerivedState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "ISkyXV3PoolDerivedState"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-core/contracts/interfaces/pool/ISkyXV3PoolEvents.sol": {
+      "lastModificationDate": 1690278181391,
+      "contentHash": "14ac887a520728d34af60d5393052dff",
+      "sourceName": "@skyxexchange/v3-core/contracts/interfaces/pool/ISkyXV3PoolEvents.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "ISkyXV3PoolEvents"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-core/contracts/interfaces/pool/ISkyXV3PoolOwnerActions.sol": {
+      "lastModificationDate": 1690278181391,
+      "contentHash": "8cc4f0b63e6e381c8de9622e45999bef",
+      "sourceName": "@skyxexchange/v3-core/contracts/interfaces/pool/ISkyXV3PoolOwnerActions.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "ISkyXV3PoolOwnerActions"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-core/contracts/interfaces/pool/ISkyXV3PoolState.sol": {
+      "lastModificationDate": 1690278181392,
+      "contentHash": "b66ab3a7ffc02258ec35664962101dc8",
+      "sourceName": "@skyxexchange/v3-core/contracts/interfaces/pool/ISkyXV3PoolState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "ISkyXV3PoolState"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-core/contracts/libraries/FullMath.sol": {
+      "lastModificationDate": 1690278180309,
+      "contentHash": "c3f03759b6500f54f402f1963af1c256",
+      "sourceName": "@skyxexchange/v3-core/contracts/libraries/FullMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0 <0.8.0"
+      ],
+      "artifacts": [
+        "FullMath"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/libraries/BytesLib.sol": {
+      "lastModificationDate": 1690278180313,
+      "contentHash": "6b8e95fb99a4d669e4a6dd8c549e06ee",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/libraries/BytesLib.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.8.0"
+      ],
+      "artifacts": [
+        "BytesLib"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/base/PeripheryValidationExtended.sol": {
+      "lastModificationDate": 1690277917629,
+      "contentHash": "712f7a2fe84168a608e9bd21956c4874",
+      "sourceName": "contracts/base/PeripheryValidationExtended.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-periphery/contracts/base/PeripheryValidation.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "PeripheryValidationExtended"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/base/Multicall.sol": {
+      "lastModificationDate": 1690278180315,
+      "contentHash": "97e35fe1126f33cbfe6e70ba30f14fb8",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/base/Multicall.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IMulticall.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "Multicall"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/base/PeripheryValidation.sol": {
+      "lastModificationDate": 1690278180316,
+      "contentHash": "5882d6561b225c611dbecbbe4b60b21f",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/base/PeripheryValidation.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BlockTimestamp.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "PeripheryValidation"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/libraries/SkyXV2Library.sol": {
+      "lastModificationDate": 1690278106606,
+      "contentHash": "c5ac3643d4b58aca2bbca168f6665667",
+      "sourceName": "contracts/libraries/SkyXV2Library.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v2-core/contracts/interfaces/ISkyXV2Pair.sol",
+        "@skyxexchange/v3-core/contracts/libraries/LowGasSafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "SkyXV2Library"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/base/ImmutableState.sol": {
+      "lastModificationDate": 1689412679939,
+      "contentHash": "fabbb882c825f8667981194f3d6a5d33",
+      "sourceName": "contracts/base/ImmutableState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IImmutableState.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "ImmutableState"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v2-core/contracts/interfaces/ISkyXV2Pair.sol": {
+      "lastModificationDate": 1690278180165,
+      "contentHash": "6e77466684712680579edf05946fb4cd",
+      "sourceName": "@skyxexchange/v2-core/contracts/interfaces/ISkyXV2Pair.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.12"
+      ],
+      "artifacts": [
+        "ISkyXV2Pair"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/interfaces/IImmutableState.sol": {
+      "lastModificationDate": 1690277938813,
+      "contentHash": "30f67084ea5a9e2768b6bf9ee3f6a87d",
+      "sourceName": "contracts/interfaces/IImmutableState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IImmutableState"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol": {
+      "lastModificationDate": 1690278180312,
+      "contentHash": "679f134cea5a7d48b27efe3cc930221d",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol",
+        "@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol",
+        "./IPoolInitializer.sol",
+        "./IERC721Permit.sol",
+        "./IPeripheryPayments.sol",
+        "./IPeripheryImmutableState.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "INonfungiblePositionManager"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol": {
+      "lastModificationDate": 1690278180152,
+      "contentHash": "889ec04fca4214581eef408fff230efa",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/interfaces/IPoolInitializer.sol": {
+      "lastModificationDate": 1690278180313,
+      "contentHash": "11600b3ed90d17aa07e53a77430a6d6c",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/interfaces/IPoolInitializer.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IPoolInitializer"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol": {
+      "lastModificationDate": 1690278180152,
+      "contentHash": "7fe751b35ebe8466b56415cce55a7074",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/interfaces/IERC721Permit.sol": {
+      "lastModificationDate": 1690278180311,
+      "contentHash": "9073d26f60e6253b2dfbc103c78cf70d",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/interfaces/IERC721Permit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/IERC721.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IERC721Permit"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1690278180152,
+      "contentHash": "1607fe9cc333c6de30f5098d45061a0b",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@openzeppelin/contracts/introspection/IERC165.sol": {
+      "lastModificationDate": 1690278178256,
+      "contentHash": "253edeb099cfd6a3b0501d2620312e3e",
+      "sourceName": "@openzeppelin/contracts/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-periphery/contracts/interfaces/external/IERC20PermitAllowed.sol": {
+      "lastModificationDate": 1690278181392,
+      "contentHash": "3cad3f665d74d11ab6a79c298d6f27fa",
+      "sourceName": "@skyxexchange/v3-periphery/contracts/interfaces/external/IERC20PermitAllowed.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20PermitAllowed"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@openzeppelin/contracts/drafts/IERC20Permit.sol": {
+      "lastModificationDate": 1690278178245,
+      "contentHash": "554ef6825dd2112860a7f82be25dab45",
+      "sourceName": "@openzeppelin/contracts/drafts/IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/test/MockTimeSwapRouter.sol": {
+      "lastModificationDate": 1689412679933,
+      "contentHash": "cfc4a8baafa60f789ce62970fc7118e4",
+      "sourceName": "contracts/test/MockTimeSwapRouter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../SwapRouter02.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "MockTimeSwapRouter02"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1690278180151,
+      "contentHash": "52659a61e7fb46afdc3d0f00c3a87da6",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1690278178256,
+      "contentHash": "2adbd82f6d055a4751566d4671512b03",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1690278178258,
+      "contentHash": "871a094d6b6b4c3714946e86329f2fa2",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
+      "lastModificationDate": 1690278178256,
+      "contentHash": "ebd32d219072a0232add3f1bb610731f",
+      "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@openzeppelin/contracts/drafts/ERC20Permit.sol": {
+      "lastModificationDate": 1690278178245,
+      "contentHash": "d3da235724edc8bc7d00aedca06d3274",
+      "sourceName": "@openzeppelin/contracts/drafts/ERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20.sol",
+        "./IERC20Permit.sol",
+        "../cryptography/ECDSA.sol",
+        "../utils/Counters.sol",
+        "./EIP712.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.5 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Permit"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@openzeppelin/contracts/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1690278178245,
+      "contentHash": "e20d6c1a44aff02acbfd4696f53087e5",
+      "sourceName": "@openzeppelin/contracts/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@openzeppelin/contracts/drafts/EIP712.sol": {
+      "lastModificationDate": 1690278178245,
+      "contentHash": "978da83ab8d1ff945e5d117d3ab7daab",
+      "sourceName": "@openzeppelin/contracts/drafts/EIP712.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EIP712"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/lens/TokenValidator.sol": {
+      "lastModificationDate": 1690277949311,
+      "contentHash": "c89a8e6e4189702b57c2fdfe4622cc5c",
+      "sourceName": "contracts/lens/TokenValidator.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@skyxexchange/v3-periphery/contracts/base/PeripheryImmutableState.sol",
+        "@skyxexchange/v2-core/contracts/interfaces/ISkyXV2Callee.sol",
+        "@skyxexchange/v2-core/contracts/interfaces/ISkyXV2Pair.sol",
+        "../libraries/SkyXV2Library.sol",
+        "../interfaces/ISwapRouter02.sol",
+        "../interfaces/ITokenValidator.sol",
+        "../base/ImmutableState.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TokenValidator"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/interfaces/ITokenValidator.sol": {
+      "lastModificationDate": 1689412679943,
+      "contentHash": "676dcd8a80a133e55ee2799b6053c602",
+      "sourceName": "contracts/interfaces/ITokenValidator.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "ITokenValidator"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v2-core/contracts/interfaces/ISkyXV2Callee.sol": {
+      "lastModificationDate": 1690278180165,
+      "contentHash": "ee26bbf3e85b166203f537a8de37b166",
+      "sourceName": "@skyxexchange/v2-core/contracts/interfaces/ISkyXV2Callee.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.12"
+      ],
+      "artifacts": [
+        "ISkyXV2Callee"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/test/ImmutableStateTest.sol": {
+      "lastModificationDate": 1689412679933,
+      "contentHash": "19d0eec1ead353812e9900c715cf5d4b",
+      "sourceName": "contracts/test/ImmutableStateTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../base/ImmutableState.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "ImmutableStateTest"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/lens/MixedRouteQuoterV1.sol": {
+      "lastModificationDate": 1690277949311,
+      "contentHash": "500622b615d7617e91abff7429f79068",
+      "sourceName": "contracts/lens/MixedRouteQuoterV1.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-periphery/contracts/base/PeripheryImmutableState.sol",
+        "@skyxexchange/v3-core/contracts/libraries/SafeCast.sol",
+        "@skyxexchange/v3-core/contracts/libraries/TickMath.sol",
+        "@skyxexchange/v3-core/contracts/libraries/TickBitmap.sol",
+        "@skyxexchange/v3-core/contracts/interfaces/ISkyXV3Pool.sol",
+        "@skyxexchange/v3-core/contracts/interfaces/callback/ISkyXV3SwapCallback.sol",
+        "@skyxexchange/v3-periphery/contracts/libraries/Path.sol",
+        "@skyxexchange/v3-periphery/contracts/libraries/PoolAddress.sol",
+        "@skyxexchange/v3-periphery/contracts/libraries/CallbackValidation.sol",
+        "@skyxexchange/v2-core/contracts/interfaces/ISkyXV2Pair.sol",
+        "../base/ImmutableState.sol",
+        "../interfaces/IMixedRouteQuoterV1.sol",
+        "../libraries/PoolTicksCounter.sol",
+        "../libraries/SkyXV2Library.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "MixedRouteQuoterV1"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/interfaces/IMixedRouteQuoterV1.sol": {
+      "lastModificationDate": 1689412679943,
+      "contentHash": "e1175715909f2b7c8fdd95daef962319",
+      "sourceName": "contracts/interfaces/IMixedRouteQuoterV1.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IMixedRouteQuoterV1"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/libraries/PoolTicksCounter.sol": {
+      "lastModificationDate": 1690277939029,
+      "contentHash": "44ab4bbf4e11ec2ee9640c9d45d522c6",
+      "sourceName": "contracts/libraries/PoolTicksCounter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-core/contracts/interfaces/ISkyXV3Pool.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "PoolTicksCounter"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-core/contracts/libraries/TickBitmap.sol": {
+      "lastModificationDate": 1690278180310,
+      "contentHash": "a37b6629ee910c5581d86fce2d412c02",
+      "sourceName": "@skyxexchange/v3-core/contracts/libraries/TickBitmap.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BitMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "TickBitmap"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-core/contracts/libraries/BitMath.sol": {
+      "lastModificationDate": 1690278180309,
+      "contentHash": "81e58372a134f05eb1a211a1efef8a1e",
+      "sourceName": "@skyxexchange/v3-core/contracts/libraries/BitMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "BitMath"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/test/TestSkyXV3Callee.sol": {
+      "lastModificationDate": 1690278146363,
+      "contentHash": "3ff52f15d9de3c24071f234fd2dcd859",
+      "sourceName": "contracts/test/TestSkyXV3Callee.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-core/contracts/interfaces/callback/ISkyXV3SwapCallback.sol",
+        "@skyxexchange/v3-core/contracts/libraries/SafeCast.sol",
+        "@skyxexchange/v3-core/contracts/interfaces/ISkyXV3Pool.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TestSkyXV3Callee"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/lens/QuoterV2.sol": {
+      "lastModificationDate": 1690277949311,
+      "contentHash": "17ba081b2391250d36fda7049b74b63f",
+      "sourceName": "contracts/lens/QuoterV2.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-periphery/contracts/base/PeripheryImmutableState.sol",
+        "@skyxexchange/v3-core/contracts/libraries/SafeCast.sol",
+        "@skyxexchange/v3-core/contracts/libraries/TickMath.sol",
+        "@skyxexchange/v3-core/contracts/libraries/TickBitmap.sol",
+        "@skyxexchange/v3-core/contracts/interfaces/ISkyXV3Pool.sol",
+        "@skyxexchange/v3-core/contracts/interfaces/callback/ISkyXV3SwapCallback.sol",
+        "@skyxexchange/v3-periphery/contracts/libraries/Path.sol",
+        "@skyxexchange/v3-periphery/contracts/libraries/PoolAddress.sol",
+        "@skyxexchange/v3-periphery/contracts/libraries/CallbackValidation.sol",
+        "../interfaces/IQuoterV2.sol",
+        "../libraries/PoolTicksCounter.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "QuoterV2"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/interfaces/IQuoterV2.sol": {
+      "lastModificationDate": 1689412679942,
+      "contentHash": "d05ab58d7d5c927c5eb205eb7179d13a",
+      "sourceName": "contracts/interfaces/IQuoterV2.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IQuoterV2"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/lens/Quoter.sol": {
+      "lastModificationDate": 1690277949329,
+      "contentHash": "62a9c63de498ec5485fbc9242e07df39",
+      "sourceName": "contracts/lens/Quoter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-periphery/contracts/base/PeripheryImmutableState.sol",
+        "@skyxexchange/v3-core/contracts/libraries/SafeCast.sol",
+        "@skyxexchange/v3-core/contracts/libraries/TickMath.sol",
+        "@skyxexchange/v3-core/contracts/interfaces/ISkyXV3Pool.sol",
+        "@skyxexchange/v3-core/contracts/interfaces/callback/ISkyXV3SwapCallback.sol",
+        "@skyxexchange/v3-periphery/contracts/libraries/Path.sol",
+        "@skyxexchange/v3-periphery/contracts/libraries/PoolAddress.sol",
+        "@skyxexchange/v3-periphery/contracts/libraries/CallbackValidation.sol",
+        "../interfaces/IQuoter.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "Quoter"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/interfaces/IQuoter.sol": {
+      "lastModificationDate": 1689412679944,
+      "contentHash": "fe8b4279fc6b913c2b33c72db1ed3eb1",
+      "sourceName": "contracts/interfaces/IQuoter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IQuoter"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/test/OracleSlippageTest.sol": {
+      "lastModificationDate": 1690277938870,
+      "contentHash": "2df48c7becce9fc77ffa74bff4bb25c0",
+      "sourceName": "contracts/test/OracleSlippageTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../base/OracleSlippage.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "OracleSlippageTest"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/test/TestMulticallExtended.sol": {
+      "lastModificationDate": 1689412679932,
+      "contentHash": "19804edf95cad7219c99a6dd631f5a09",
+      "sourceName": "contracts/test/TestMulticallExtended.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../base/MulticallExtended.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TestMulticallExtended"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/test/PoolTicksCounterTest.sol": {
+      "lastModificationDate": 1690277938775,
+      "contentHash": "e4b0cd1c067cc75ba962fc8d786642a8",
+      "sourceName": "contracts/test/PoolTicksCounterTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-core/contracts/interfaces/ISkyXV3Pool.sol",
+        "../libraries/PoolTicksCounter.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "PoolTicksCounterTest"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/test/TestERC20.sol": {
+      "lastModificationDate": 1689412679934,
+      "contentHash": "d6b981f196bdbd2da5bb42ecf2411765",
+      "sourceName": "contracts/test/TestERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/drafts/ERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TestERC20"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/interfaces/IWETH.sol": {
+      "lastModificationDate": 1689412679942,
+      "contentHash": "3ebbcdd022246c51b86ad29bdaa7ab9a",
+      "sourceName": "contracts/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/contracts/test/MockObservations.sol": {
+      "lastModificationDate": 1690277917629,
+      "contentHash": "17af9f90de12e791140e51cbcaea5ee2",
+      "sourceName": "contracts/test/MockObservations.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@skyxexchange/v3-core/contracts/libraries/Oracle.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "MockObservations"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/skyx/swap-router-contracts/node_modules/@skyxexchange/v3-core/contracts/libraries/Oracle.sol": {
+      "lastModificationDate": 1690278180310,
+      "contentHash": "40af979a56a3e0538188d37c9cd463d2",
+      "sourceName": "@skyxexchange/v3-core/contracts/libraries/Oracle.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Oracle"
+      ]
+    }
+  }
+}
